@@ -1,5 +1,5 @@
 import React from 'react'
-import Fetch from './features/fetch'
+import Fetch from './Fetch'
 const App = () => {
   return (
     <>

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import axios from 'axios';
 import { useState } from 'react'
-import '../index.css'
+import './index.css'
 
 const Fetch = () => {
   // const [city, setcity] = useState("")
