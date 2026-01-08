@@ -1,29 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: 'poppins';
+  font-family: 'Poppins', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #f0f0f0;
+  margin: 0;
+  padding: 20px;
 }
+
+/* Search */
 .search-container {
   display: flex;
-  gap: 10px; /* space between input and button */
-
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-h4{
-  margin: 0 ;
-  margin-top: 2rem;
-  padding: 0;
+
+h4 {
+  margin: 0;
+  margin-top: 1.5rem;
   font-weight: normal;
+  text-align: center;
 }
 
+/* Input */
 input {
   padding: 10px 15px;
   border: 1px solid #ccc;
   border-radius: 8px;
   outline: none;
-  width: 200px;
+  width: 100%;
+  max-width: 220px;
   font-size: 16px;
   transition: border 0.3s;
 }
@@ -32,6 +44,7 @@ input:focus {
   border-color: #4caf50;
 }
 
+/* Button */
 button {
   padding: 10px 20px;
   border: none;
@@ -47,35 +60,47 @@ button:hover {
   background-color: #414141;
 }
 
-
+/* Card */
 .weather-card {
   background-color: white;
-  padding: 40px 40px;
+  padding: 35px 30px;
   border-radius: 12px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  width: 100%;
+  max-width: 420px;
 }
 
+/* Text */
 .weather-card .city {
   font-size: 20px;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .weather-card .temp {
-  font-size: 48px;
+  font-size: 44px;
   font-weight: bold;
   margin-bottom: 5px;
 }
 
 .weather-card .condition {
-  font-size: 16px;
+  font-size: 15px;
   color: #555;
   margin-bottom: 15px;
+}
+
+/* Details */
+.details {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4rem;
+  flex-wrap: wrap;
+  margin-top: 10px;
 }
 
 .weather-card .details span {
@@ -83,21 +108,44 @@ button:hover {
   font-size: 14px;
   color: #777;
 }
-.details{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 7rem;
-}
-.details-col{
+
+.details-col {
   display: flex;
   flex-direction: column;
-  align-items: start;
-  gap: .8rem;
+  align-items: flex-start;
+  gap: .6rem;
 }
-.main-part{
+
+/* Layout */
+.main-part {
   display: flex;
   flex-direction: column;
-  gap: .2rem;
-  margin: 1.5rem;
+  gap: .4rem;
+  margin: 1.2rem;
+}
+
+/* 📱 Mobile */
+@media (max-width: 480px) {
+  .weather-card {
+    padding: 25px 20px;
+  }
+
+  .weather-card .temp {
+    font-size: 36px;
+  }
+
+  .details {
+    gap: 2rem;
+  }
+
+  h4 {
+    font-size: 14px;
+  }
+}
+
+/* 💻 Tablets */
+@media (min-width: 768px) {
+  .weather-card {
+    padding: 40px;
+  }
 }
