@@ -35,10 +35,3 @@ Features **dynamic weather icons, loading and empty states**, and a **clean resp
 4. Shows loading while fetching and empty state if input is blank  
 
 ---
-
-## 📦 Installation & Setup
-
-Clone the repository:
-
-```bash
-git clone https://github.com/your-username/react-weather-app.git
