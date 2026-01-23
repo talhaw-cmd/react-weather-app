@@ -43,11 +43,3 @@ The app features **dynamic weather icons, loading and empty states**, and a **cl
 
 ---
 
-## 🖼 Screenshots
-
-*(Optional: Add screenshots for Desktop and Mobile views here to showcase the UI)*
-
----
-
-## 📂 Folder Structure (Example)
-
